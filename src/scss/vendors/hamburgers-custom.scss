@@ -1,0 +1,20 @@
+.hamburger{
+    padding-left: 0px;
+    padding-right: 0px;
+
+    &-box{
+        width: 25px;
+    }
+
+    &-inner, &-inner::before, &-inner::after{
+        width: 25px;
+    }
+
+    &-inner::before{
+        top:-6px;
+    }
+
+    &-inner::after{
+        bottom: -6px;
+    }
+}
