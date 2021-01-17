@@ -1,0 +1,23 @@
+.btn{
+    position: relative;
+
+    padding:11px 28.39px;
+
+    border-radius: 4px;
+
+    &__text{
+        color:#fff;
+
+        font-size: 16px;
+
+        font-weight: 600;
+    }
+
+
+    &_color{
+
+        &_primary{
+            background-color:$primary-color;
+        }
+    }
+}

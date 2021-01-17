@@ -1,0 +1,33 @@
+.mainpage{
+    position: relative;
+
+    width: 100%;
+    height: auto;
+
+    padding:20.92px 0px 44px;
+
+    &__search{
+        position: relative;
+
+        width: 100%;
+        height: auto;
+
+        margin-bottom: 19px;
+    }
+
+    &__links{
+        position: relative;
+
+        width: 100%;
+        height: auto;
+        margin-bottom: 23px;
+    }
+
+    &__content{
+        position: relative;
+
+        width: 100%;
+        height: auto;
+
+    }
+}
