@@ -16,6 +16,20 @@
 
                     <div class="mainpage__content">
 
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-3 flex-row-start">
+                                    <filter-component v-for="(filter, index) in filters" :title="filter.title" :list="filter.list" :key="index" />
+
+                                    <p class="actiontext">Сбросить все фильтры</p>
+                                </div>
+
+                                <div class="col-9">
+
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
 
                 </div>
@@ -28,11 +42,69 @@
 
 <script>
     import Search from '../../components/common/Search'
+    import FilterComponent from '../../components/common/Filter'
 
     export default {
         name:'Mainpage',
         components:{
             Search,
+            FilterComponent,
+        },
+        data(){
+            return{
+                filters:[
+                    {
+                        title:'Опции тарифа ',
+                        list:[
+                            {
+                                text:'Только прямые',
+                                value:'',
+                            },
+                            {
+                                text:'Только с багажом',
+                                value:'',
+                            },
+                            {
+                                text:'Только возвратные',
+                                value:'',
+                            },
+                        ]
+                    },
+                    {
+                        title:'Авиакомпании',
+                        list:[
+                            {
+                                text:'Все',
+                                value:'',
+                            },
+                            {
+                                text:'Air Astana',
+                                value:'',
+                            },
+                            {
+                                text:'Fly Arystan',
+                                value:'',
+                            },
+                            {
+                                text:'SCAT Airlines',
+                                value:'',
+                            },
+                            {
+                                text:'Lufthansa',
+                                value:'',
+                            },
+                            {
+                                text:'Turkish Airlines',
+                                value:'',
+                            },
+                            {
+                                text:'China Southern Air',
+                                value:'',
+                            },
+                        ]
+                    },
+                ]
+            }
         }
     }
 </script>

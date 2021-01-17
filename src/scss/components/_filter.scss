@@ -1,0 +1,33 @@
+.filter{
+    position: relative;
+
+    width: 100%;
+    height: auto;
+
+    background-color: $neutral-regular;
+    border-radius: 4px;
+
+    padding:12px;
+
+    margin-bottom: 12px;
+
+    &__title{
+        position: relative;
+
+        font-weight: 700;
+
+        margin-bottom: 22px;
+    }
+
+    &__list{
+        position: relative;
+
+        width: 100%;
+        height: auto;
+
+        display: grid;
+        grid-template: auto / auto ;
+        grid-gap: 20px 0px;
+
+    }
+}
