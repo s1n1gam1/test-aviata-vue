@@ -10,7 +10,8 @@
                     </div>
 
                     <div class="mainpage__links">
-
+                        <btn :icon="require('@/assets/img/icons/alarm.svg')" text="Отслеживать изменения цен" size="small" color="yellow" />
+                        <btn :icon="require('@/assets/img/icons/data.svg')" text="Посмотреть цены на соседние даты (+- 3дня)" size="small" color="yellow" />
                     </div>
 
                     <div class="mainpage__content">

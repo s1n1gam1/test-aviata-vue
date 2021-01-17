@@ -21,6 +21,13 @@
         width: 100%;
         height: auto;
         margin-bottom: 23px;
+
+        display: grid;
+        grid-template: auto / auto ;
+        grid-auto-flow: column;
+        gap: 0px 9px;
+
+        justify-content: flex-end;
     }
 
     &__content{
@@ -28,6 +35,5 @@
 
         width: 100%;
         height: auto;
-
     }
 }
