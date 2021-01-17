@@ -1,0 +1,57 @@
+.breadcrumbs{
+    position: relative;
+
+    width: 100%;
+    height: auto;
+
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+
+    &__link{
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+        align-items:center;
+        
+        &::after{
+            content: "";
+            padding-left: 10px;
+            padding-right: 10px;
+
+            width: auto;
+            height: 10px;
+
+            background: url('https://aviata.kz/static/images/step_arrow.png') no-repeat 50%;
+        }
+
+        &:last-child{
+            &::after{
+                display: none;
+            }
+        }
+    }
+
+    &__item{
+
+        border-radius: 4px;
+
+        background-color: $neutral-primary;
+        padding:5px;
+
+        &-title{
+            font-size: 12px;
+        }
+
+        &_active{
+            background-color: $primary-color;
+
+            .breadcrumbs__item-title{
+                color:#fff;
+            }
+        }
+    }
+    
+
+}

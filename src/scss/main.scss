@@ -1,3 +1,4 @@
+// abstracts
 @import 
     './abstracts/animations',
     './abstracts/breakpoints',
@@ -6,17 +7,27 @@
     './abstracts/page-transitions',
     './abstracts/variables';
 
+// base
 @import 
     './base/typography',
     './base/reset';
 
-@import 
-    './layout/grid';
 
+// vendors
 @import 
     './vendors/hamburgers-settings',
     './vendors/hamburgers-custom.scss';
 
+// layout
+@import 
+    './layout/header',
+    './layout/grid';
+
+// pages
 @import 
     './views/app',
     './views/mainpage/mainpage';
+
+// components
+@import 
+    './components/breadcrumbs';

@@ -1,0 +1,55 @@
+.header{
+    position: relative;
+
+    width: 100%;
+    height: auto;
+
+    padding:25.56px 75px;
+
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+
+    &__logo{
+        
+        &-icon{
+            height: 67.38px;
+            width: auto;
+            object-fit: contain ;
+        }
+    }
+
+    &__center{
+        position: relative;
+
+        display:flex;
+        flex-direction:column;
+        justify-content:flex-start;
+        align-items:flex-start;
+    }
+
+    &__title{
+        font-size: 26px;
+        font-weight: 500;
+
+        white-space: nowrap;
+
+        margin-bottom: 10px;
+    }
+
+    &__contacts{
+        display:flex;
+        flex-direction:column;
+        justify-content:flex-start;
+        align-items:flex-end;
+
+        a{
+            font-size: 18px;
+
+            span{
+                font-size: 24px;
+            }
+        }
+    }
+}
