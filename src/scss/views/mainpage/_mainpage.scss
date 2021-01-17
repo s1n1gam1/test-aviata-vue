@@ -35,5 +35,16 @@
 
         width: 100%;
         height: auto;
+
+        &-list{
+            position: relative;
+
+            width: 100%;
+            height: auto;
+
+            display: grid;
+            grid-template: auto / auto;
+            grid-gap: 12px 0px;
+        }
     }
 }

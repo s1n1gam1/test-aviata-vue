@@ -26,6 +26,12 @@
 
                                 <div class="col-9">
 
+                                    <div class="mainpage__content-list">
+                                        
+                                        
+
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
