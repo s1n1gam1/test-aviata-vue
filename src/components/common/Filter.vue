@@ -3,7 +3,7 @@
         <p class="filter__title" v-if="title" v-html="title"></p>
 
         <div class="filter__list" v-if="list">
-            <checkbox v-for="(item, index) in list" :key="index" :text="item.text" />
+            <checkbox v-for="(item, index) in list" :key="index" :text="item.text" :value="item.value" @onchange="handleChange"/>
         </div>
     </div>
 </template>
@@ -21,6 +21,11 @@
                 type:Array,
                 required:false,
                 default:()=>[],
+            }
+        },
+        methods:{
+            handleChange(val){
+                console.log(val)
             }
         }
     }

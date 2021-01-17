@@ -58,15 +58,15 @@
                         list:[
                             {
                                 text:'Только прямые',
-                                value:'',
+                                value:'direct',
                             },
                             {
                                 text:'Только с багажом',
-                                value:'',
+                                value:'luggage',
                             },
                             {
                                 text:'Только возвратные',
-                                value:'',
+                                value:'returned',
                             },
                         ]
                     },
