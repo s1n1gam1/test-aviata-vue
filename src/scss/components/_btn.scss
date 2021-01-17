@@ -50,6 +50,14 @@
                 font-weight: 400;
             }
         }
+
+        &_blue{
+            background-color: #EAF0FA;
+            
+            .btn__text{
+                color: #5763B3;
+            }
+        }
     }
 
     &_size{
@@ -59,6 +67,32 @@
 
             .btn__text{
                 font-size: 13px;
+            }
+        }
+
+        &_xs{
+            padding:3px 8px;
+
+            .btn__text{
+                font-size: 12px;
+
+                white-space: nowrap;
+            }
+        }
+
+        &_large{
+            display:flex;
+            flex-direction:row;
+            justify-content:center;
+            align-items:center;
+
+            width: 100%;
+
+            text-align: center;
+
+            .btn__text{
+                font-size: 18px;
+                font-weight: 700;
             }
         }
 

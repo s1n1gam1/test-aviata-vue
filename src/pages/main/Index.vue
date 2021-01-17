@@ -27,8 +27,10 @@
                                 <div class="col-9">
 
                                     <div class="mainpage__content-list">
-                                        
-                                        
+                                        <card />
+                                        <card />
+                                        <card />
+                                        <card />
 
                                     </div>
 
@@ -49,12 +51,14 @@
 <script>
     import Search from '../../components/common/Search'
     import FilterComponent from '../../components/common/Filter'
+    import Card from '../../components/common/Card'
 
     export default {
         name:'Mainpage',
         components:{
             Search,
             FilterComponent,
+            Card,
         },
         data(){
             return{

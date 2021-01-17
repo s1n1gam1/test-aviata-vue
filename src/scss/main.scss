@@ -18,6 +18,10 @@
     './vendors/hamburgers-settings',
     './vendors/hamburgers-custom.scss';
 
+// elements
+@import 
+    './elements/text';
+
 // layout
 @import 
     './layout/header',
@@ -35,5 +39,6 @@
     './components/input',
     './components/filter',
     './components/checkbox',
-    './components/actiontext',
+    './components/card',
+    './components/path',
     './components/breadcrumbs';
